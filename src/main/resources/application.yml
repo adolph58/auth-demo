@@ -1,0 +1,24 @@
+server:
+  servlet:
+    context-path: /
+  port: 9001
+
+spring:
+  application:
+    name: auth-service
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    timeout: 3s
+
+oauth:
+  jwt:
+    secret: sjwognetwljds
+    accessTokenExpiredSeconds: 7200
+    refreshTokenExpiredSeconds: 86400
+
+rsa:
+  publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDg9rhSqLiXE5yf18p7rV7lsyhavSWhxKRfKizEwseIokabiTstqAMfEvWE8l6Iutw8zaHjz3c95PMtf//h85/HdnYDROy/zElNtWX2QcuqgJrCEqGKwOjyNrhwEgCWlqZgU2V0rzEmOPFYhcB2Wj+vizzshsYuKKTUsYReZiKBZQIDAQAB
+  privateKey: MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAOD2uFKouJcTnJ/XynutXuWzKFq9JaHEpF8qLMTCx4iiRpuJOy2oAx8S9YTyXoi63DzNoePPdz3k8y1//+Hzn8d2dgNE7L/MSU21ZfZBy6qAmsISoYrA6PI2uHASAJaWpmBTZXSvMSY48ViFwHZaP6+LPOyGxi4opNSxhF5mIoFlAgMBAAECgYBfnLyudQMvQqiYzxBCDGd+3OxT1HxACuGJiNVKMza2/bFgvaynNPdOp7It9Qz0s+aS+RrLRgv6BGrOdc59bBwF0HaAMT8XSd2qrIpelMtEOqfl6P6SIWtkSd+CKwtQ0EnHyp4oZk6olHkzUNhNKfQcMakPfcAPV083HoKftjyFqQJBAPFF1mN1H14WfV9x9Ol1vA6sRngvDdynXPzwu+MUQ3YkrFJGcfDdXAWXg8jQZQsIkzYnHHr+qHQD8kcDQ57BhEsCQQDusgj3KgPK2eWxdyEGMJuCFnnUmiBlTJPos224wLmW5ZZ63Nib0L1Stjyvcv/YOD+8w5mJiCH0Y5P3TzcKsKMPAkAUCcvTeM/BHbcN7UX8+cVDprU3mBjboZ7MdyXzpyQvNL6HGsity4SwBjRwwjYSI4UuczMfV/UfpZBCq5e7ILFfAkA/1RCcuHmnJ7pLSSZlt13+3e/asRT0whPT6RfwjmmTNvaVCLZMhPf8RIvaB5Dvy6sP2ecXZnZeGrsZKe/4ReB1AkA4LM9On+vdisYOfLUig22k+lyDV7UI5kKXhHfiq9gUI3QqFcWlJ6J9VDKoqA4nfukxdTyw2MEYK8dzOSOP6W6e
